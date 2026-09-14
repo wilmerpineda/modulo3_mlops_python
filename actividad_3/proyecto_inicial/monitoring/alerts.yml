@@ -1,0 +1,18 @@
+groups:
+  - name: bank-operations
+    rules:
+      - alert: BankApiUnavailable
+        expr: up{job="bank-api"} == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "Prometheus no puede consultar la API"}
+      - alert: BankModelNotReady
+        expr: bank_model_ready == 0
+        for: 1m
+        labels: {severity: critical}
+        annotations: {summary: "Proceso vivo sin modelo disponible"}
+      - alert: BankHighLatency
+        expr: histogram_quantile(0.95, sum by(le) (rate(bank_http_duration_seconds_bucket{route="/predict"}[5m]))) > 0.5
+        for: 2m
+        labels: {severity: warning}
+        annotations: {summary: "p95 de inferencia superior a 500 ms"}

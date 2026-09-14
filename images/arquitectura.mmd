@@ -1,0 +1,7 @@
+flowchart LR
+ N0["Snapshot UCI"] --> N1
+ N1["Pipeline y modelo"] --> N2
+ N2["API y métricas"] --> N3
+ N3["Prometheus / Grafana"] --> N4
+ N4["Evidently por lotes"] --> N5
+ N5["Revisión y actualización"]

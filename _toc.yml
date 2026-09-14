@@ -1,0 +1,52 @@
+format: jb-book
+root: intro
+parts:
+  - caption: Orientación
+    chapters:
+      - file: resultados_aprendizaje
+      - file: caso_estudio
+      - file: guia_estudio
+  - caption: Unidad 1. Monitoreo y mantenimiento
+    chapters:
+      - file: unidad_1/01_drift
+      - file: unidad_1/02_metricas
+      - file: unidad_1/03_ventanas
+  - caption: Unidad 2. Herramientas de observabilidad
+    chapters:
+      - file: unidad_2/04_evidently
+      - file: unidad_2/05_prometheus
+      - file: unidad_2/06_grafana
+  - caption: Unidad 3. Ciclo de actualización
+    chapters:
+      - file: unidad_3/07_retraining
+      - file: unidad_3/08_promocion
+      - file: unidad_3/09_trazabilidad
+  - caption: Unidad 4. CI/CD para ML
+    chapters:
+      - file: unidad_4/10_ci_cd
+      - file: unidad_4/11_github_actions
+      - file: unidad_4/12_alternativas
+  - caption: Unidad 5. Testing, gobernanza y equidad
+    chapters:
+      - file: unidad_5/13_testing
+      - file: unidad_5/14_gobernanza
+      - file: unidad_5/15_equidad
+  - caption: Unidad 6. Escalabilidad e integración
+    chapters:
+      - file: unidad_6/16_escalabilidad
+      - file: unidad_6/17_laboratorio
+      - file: unidad_6/18_autoevaluacion
+  - caption: Notebooks ejecutables
+    chapters:
+      - file: notebooks/01_exploracion
+      - file: notebooks/02_baseline
+      - file: notebooks/03_drift
+      - file: notebooks/04_etiquetas
+      - file: notebooks/05_equidad
+      - file: notebooks/06_actualizacion
+  - caption: Evaluación y consulta
+    chapters:
+      - file: actividad_3
+      - file: trazabilidad_actividad_3
+      - file: codigo_proyecto
+      - file: referencias

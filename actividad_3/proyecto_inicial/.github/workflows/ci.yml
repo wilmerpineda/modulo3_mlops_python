@@ -1,0 +1,43 @@
+name: CI de datos, modelos y servicio
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install poetry==2.1.3
+      - run: poetry install --no-interaction
+      - run: poetry run python -m bank_ops.data
+      # TODO A3-03: sustituir compileall por pytest antes de construir imagen.
+      - run: poetry run python -m compileall -q src
+        env:
+          EVIDENTLY_DO_NOT_TRACK: '1'
+      - name: Build y smoke test
+        run: |
+          docker build -t bank-ops:ci .
+          docker run -d --name bank-ci -p 8000:8000 bank-ops:ci
+          for i in $(seq 1 30); do
+            if curl -fsS http://localhost:8000/ready; then break; fi
+            sleep 2
+          done
+          curl -fsS http://localhost:8000/ready
+      - name: Conservar imagen entregable de main
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: docker save bank-ops:ci | gzip > bank-ops-image.tar.gz
+      - uses: actions/upload-artifact@v4
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        with:
+          name: bank-ops-image
+          path: bank-ops-image.tar.gz
+          retention-days: 7
+      - if: always()
+        run: docker logs bank-ci || true

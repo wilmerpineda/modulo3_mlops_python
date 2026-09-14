@@ -1,0 +1,32 @@
+{
+  "dataset": "Bank Marketing — variante bank-full.csv",
+  "source": "https://archive.ics.uci.edu/dataset/222/bank+marketing",
+  "doi": "10.24432/C5K306",
+  "license": "CC BY 4.0 (declarada por UCI)",
+  "rows": 45211,
+  "columns": [
+    "age",
+    "job",
+    "marital",
+    "education",
+    "default",
+    "balance",
+    "housing",
+    "loan",
+    "contact",
+    "day",
+    "month",
+    "duration",
+    "campaign",
+    "pdays",
+    "previous",
+    "poutcome",
+    "y"
+  ],
+  "sha256": "397059c670807e7d1456b1510e1e11331a7a40bd9c12f7554acfe519b34e0c81",
+  "synthetic": false,
+  "acquisition": "Copia local del material del usuario, normalizada de coma a punto y coma; orden y valores conservados. La descarga directa de UCI falló por DNS. No se afirma identidad binaria con el ZIP original.",
+  "local_source_name": "Clase 4/bank-full.csv",
+  "local_source_sha256": "b44507c26634736d4a0619ec2d7c4b6ff56a2c63cbeb5176d3134e7b25e416f0",
+  "normalization": "csv.reader UTF-8-sig -> csv.writer separador ;, sin reordenar ni eliminar registros"
+}

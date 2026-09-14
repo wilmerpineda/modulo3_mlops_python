@@ -1,0 +1,31 @@
+title: MLOps en Python - Módulo 3
+author: Maestría en Ciencia de Datos
+copyright: '2026'
+only_build_toc_files: true
+exclude_patterns:
+  - docente/**
+  - actividad_3/**
+  - formatos/**
+  - tools/**
+  - '**/.venv/**'
+execute:
+  execute_notebooks: 'off'
+parse:
+  myst_enable_extensions:
+    - colon_fence
+    - deflist
+    - dollarmath
+    - html_image
+sphinx:
+  config:
+    language: es
+  extra_extensions:
+    - sphinxcontrib.mermaid
+html:
+  home_page_in_navbar: true
+  use_repository_button: true
+  extra_footer: 'MLOps en Python · Módulo 3 · Material educativo'
+
+repository:
+  url: https://github.com/wilmerpineda/modulo3_mlops_python
+  branch: main

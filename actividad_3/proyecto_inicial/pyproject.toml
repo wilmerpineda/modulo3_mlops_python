@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "bank-ops-modulo3"
+version = "1.0.0"
+description = "Laboratorio educativo de operaciones de ML con Bank Marketing"
+authors = ["MLOps en Python"]
+packages = [{include = "bank_ops", from = "src"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.13"
+pandas = "2.2.3"
+numpy = "1.26.4"
+scikit-learn = "1.6.1"
+joblib = "1.4.2"
+fastapi = "0.115.12"
+uvicorn = "0.34.2"
+pydantic = "2.11.4"
+prometheus-client = "0.21.1"
+evidently = "0.7.20"
+matplotlib = "3.9.4"
+pyyaml = "6.0.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.5"
+httpx = "0.28.1"
+nbformat = "5.10.4"
+nbclient = "0.10.2"
+ipykernel = "6.29.5"
+
+[build-system]
+requires = ["poetry-core>=2.0,<3"]
+build-backend = "poetry.core.masonry.api"

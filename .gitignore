@@ -1,0 +1,11 @@
+_build/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.env
+docente/
+formatos/
+actividad_3/proyecto_inicial/reports/
+actividad_3/proyecto_inicial/artifacts/
