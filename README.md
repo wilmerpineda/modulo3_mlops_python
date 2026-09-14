@@ -2,7 +2,7 @@
 
 **[Leer el Jupyter Book](https://wilmerpineda.github.io/modulo3_mlops_python/)**
 
-Operaciones, monitoreo y automatización continua: 18 capítulos, seis notebooks con resultados, diagramas Mermaid e imágenes, actividad integradora y proyecto inicial con Bank Marketing.
+Operaciones, monitoreo y automatización continua: manual técnico avanzado con 18 capítulos ampliados, seis notebooks ejecutados con experimentos de profundización, diagramas Mermaid, actividad integradora y proyecto inicial con Bank Marketing.
 
 ## Contenido
 - Monitoreo, data drift, concept drift y desempeño con etiquetas tardías.

@@ -1,0 +1,38 @@
+[
+  {
+    "notebook": "01_exploracion.ipynb",
+    "executed": true,
+    "seconds": 12.19,
+    "code_cells": 7
+  },
+  {
+    "notebook": "02_baseline.ipynb",
+    "executed": true,
+    "seconds": 9.46,
+    "code_cells": 5
+  },
+  {
+    "notebook": "03_drift.ipynb",
+    "executed": true,
+    "seconds": 22.0,
+    "code_cells": 6
+  },
+  {
+    "notebook": "04_etiquetas.ipynb",
+    "executed": true,
+    "seconds": 5.57,
+    "code_cells": 5
+  },
+  {
+    "notebook": "05_equidad.ipynb",
+    "executed": true,
+    "seconds": 5.18,
+    "code_cells": 6
+  },
+  {
+    "notebook": "06_actualizacion.ipynb",
+    "executed": true,
+    "seconds": 8.76,
+    "code_cells": 5
+  }
+]

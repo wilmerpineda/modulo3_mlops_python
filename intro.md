@@ -4,6 +4,8 @@ Un modelo desplegado es una hipótesis que debe seguir contrastándose. Aunque l
 
 El recorrido integra **monitoreo y mantenimiento**, **CI/CD para ML** y **gobernanza, ética y escalabilidad**. Continúa las capacidades de empaquetado y despliegue del módulo 2 mediante un nuevo caso: clasificación de suscripción a depósitos con Bank Marketing de UCI.
 
+Esta edición desarrolla el módulo como manual técnico avanzado: cada capítulo conecta fundamentos, decisiones operativas, ejemplos numéricos, límites y ejercicios. Las ampliaciones de los notebooks son prácticas de estudio; la actividad conserva su alcance de dos semanas y sus tareas obligatorias.
+
 ![Arquitectura del módulo](images/arquitectura.svg)
 
 ## Cómo trabajar con el material
